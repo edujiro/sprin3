@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN STARK</title>
+
+</head>
+<body bgcolor="#f2f3b8">
+    <h2>Registrate</h2>
+    <form class="form" id="form" onsubmit="return validateForm()">
+      <div class="row-one">
+        <p class="text">Nombre </p><input type="text" class="text-input" id="Nombre" autocomplete="off" required>
+        <p class="text">Apellido </p><input type="text" class="text-input" id="Apellido" autocomplete="off" required>
+        </div>
+
+        <div class="row-two">
+          <p class="text"></p>Tipo de Documento</p>
+            <select name="Documento" required>
+              <option value="" disabled selected hidden>Selecciona Tipo de Documento</option>
+              <option value="Cédula de ciudadania">Cédula de Ciudadanía</option>
+              <option value="Tarjeta de identidad">Tarjeta de identidad</option>
+            </select>
+          <p class="text"></p>N° Documento</p><input type="text" class="text-input" id="Documento" autocomplete="off" required/></p>
+           
+          Sexo:     
+          <label class="container">
+            <input type="radio" name="radio" id="f">
+            <label for="Femenino">F</label>
+            <span class="checkmark"></span>
+            </label>
+          <label class="container">
+          <input type="radio" name="radio" id="m">
+          <label for="Masculino">M</label>  
+          <span class="checkmark"></span>
+          </label></p>
+          </div>
+          
+          <div>
+            <label for="bday">Seleccione su fecha de nacimiento:</label>
+            <input type="date" id="bday" name="bday">
+          </div>
+
+        <div class="row-three">
+          <p class="text">¿Cuál es su ocupación?
+          <select name="Ocupación">
+            <option value="value1">Estudiante</option>
+            <option value="value2" selected>Docente</option>
+            <option value="value3">Trabajador</option>
+          </select>
+          </div>
+          <hr />
+        <div class="row-four">
+             <h4> Datos de contacto: </h4></p>
+            Introduce tu email: <input type="email" name="email"></p>
+	          Contraseña: <input type="password" NAME="contraseña"><BR> 
+           <br />
+              <input type="submit" value="Enviar"> 
+              
+              <input type="reset" value="Borrar">
+            </div>
+          </div>
+        </form>
+        </body>
+        <br>
+    </div>  
+</body>
+</html>
